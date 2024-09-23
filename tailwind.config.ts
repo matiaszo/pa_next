@@ -9,9 +9,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        white: "var(--white)",
+        black: "var(--black)",
+        cyan: "var(--cyan)"
       },
+      fontSize:{
+        large: "40px",
+        medium: "24px",
+        small: "16px"
+      },
+      fontFamily:{
+        robFont: "var(--roboto)"
+      },
+      screens:{
+        "2lg": "1920px"
+      }
     },
   },
   plugins: [],
