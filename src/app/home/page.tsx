@@ -1,10 +1,7 @@
 import Link from "next/link";
 
-interface IMenu{
-}
 
-
-export const Menu: React.FC<IMenu> = () => {
+export default function Home(){
 
     const style = {
         p: "text-pink-500 font-robFont text-large 2lg justify-center align-center",
@@ -18,12 +15,19 @@ export const Menu: React.FC<IMenu> = () => {
         <div className={style.center}>
                 <form className={style.form} action="">
                 <label className={style.label} htmlFor="name">Nome:</label>
-                <input type="text" name="name" placeholder="Digite o seu nome"/><br /><br />
+                <input className="rounded-2xl p-1" type="text" name="name" placeholder="Digite o seu nome"/><br /><br />
                 <label className={style.label} htmlFor="age">Idade:</label>
-                <input type="text" name="age" placeholder="Digite a sua idade"/><br /><br />
+                <input className="rounded-2xl p-1" type="text" name="age" placeholder="Digite a sua idade"/><br /><br />
                 <label className={style.label} htmlFor="gender">Sexo:</label>
-                <input type="text" name="gender" placeholder="Digite o seu sexo"/><br />
+                <input className="rounded-2xl p-1" type="text" name="gender" placeholder="Digite o seu sexo"/><br />
             </form>
+
+            <div>
+                <p>s</p>
+                <p>o</p>
+                <p>m</p>
+                <p>e</p>
+            </div>
         </div>
         </>
     )

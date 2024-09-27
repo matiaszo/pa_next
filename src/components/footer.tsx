@@ -1,3 +1,4 @@
+import { ROUTES } from "@/constants/routes";
 import Link from "next/link";
 
 interface IFooter{
@@ -14,6 +15,6 @@ export const Footer: React.FC<IFooter> = ({thi, is, a, foot}) =>{
     }
 
     return(
-            <h3 className={style.f}>{thi}  {is} {a}?  {(foot)? "true":"false"}</h3>
+            <Link href={ROUTES.maths} className={style.f}>{thi}  {is} {a}?  {(foot)? "true":"false"}</Link>
     )
-} 
+}   

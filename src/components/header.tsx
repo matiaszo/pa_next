@@ -1,3 +1,4 @@
+import { ROUTES } from "@/constants/routes";
 import Link from "next/link";
 
 interface IHeader{
@@ -6,8 +7,11 @@ interface IHeader{
 
 export const Header: React.FC<IHeader> = ({some}) => {
     return(
-        <h1 className="font-robFont flex text-medium justify-center align-center bg-cyan fixed w-screen">
-            {some}
-        </h1>
+        <>
+            {/* <h1 className="font-robFont flex text-medium justify-center align-center bg-cyan fixed w-screen">
+                {some}
+            </h1> */}
+            <Link href={ROUTES.maths}>aperta</Link>
+        </>
     )
 }
