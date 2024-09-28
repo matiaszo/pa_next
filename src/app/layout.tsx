@@ -39,9 +39,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} antialiased min-h-screen`}
       >
         {/* <Home/> */}
-        <Header some="i'm the header"/>
-
-        {children}
+        <Header/>
+        <main>{children}</main>
         <Footer thi="i'm" is= "the" a="footer" foot />
       </body>
     </html>

@@ -21,13 +21,6 @@ export default function Home(){
                 <label className={style.label} htmlFor="gender">Sexo:</label>
                 <input className="rounded-2xl p-1" type="text" name="gender" placeholder="Digite o seu sexo"/><br />
             </form>
-
-            <div>
-                <p>s</p>
-                <p>o</p>
-                <p>m</p>
-                <p>e</p>
-            </div>
         </div>
         </>
     )

@@ -1,17 +1,15 @@
 import { ROUTES } from "@/constants/routes";
 import Link from "next/link";
+import "./headerStyle.css";
 
-interface IHeader{
-    some: string;
-}
 
-export const Header: React.FC<IHeader> = ({some}) => {
+
+export const Header = () => {
     return(
         <>
-            {/* <h1 className="font-robFont flex text-medium justify-center align-center bg-cyan fixed w-screen">
-                {some}
-            </h1> */}
-            <Link href={ROUTES.maths}>aperta</Link>
+            <h1 className="font-robFont flex text-medium justify-center items-center bg-cyan relative w-screen h-10">
+                <Link className="options" href={ROUTES.maths}>Maths</Link>
+            </h1>
         </>
     )
 }
