@@ -6,7 +6,7 @@ export default function Home(){
     const style = {
         p: "text-pink-500 font-robFont text-large 2lg justify-center align-center",
         label: "text-white font-robFont",
-        center: "flex justify-center items-center w-full h-screen",
+        center: "flex justify-center items-center w-full h-[89vh]",
         form: "bg-slate-700 p-10 m-10 rounded-lg"
     }
 
