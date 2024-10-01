@@ -12,6 +12,14 @@ const nextConfig = {
                 source: "/operacoes",
                 destination: "/maths",
             },
+            {
+                source: "/funcao-reaproveitada",
+                destination: "/general-function",
+            },
+            {
+                source: "/cards",
+                destination: "/cartoes",
+            },
         ]
     }
 };

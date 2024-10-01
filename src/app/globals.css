@@ -6,4 +6,5 @@
   --white: #ffffff;
   --black: #0c0c0c;
   --cyan: #2b90be;
+  background: linear-gradient(to right, var(--white), aliceblue); 
 }

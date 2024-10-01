@@ -36,7 +36,7 @@ export default function RootLayout({
         {/* <Home/> */}
         <Header/>
         <main>{children}</main>
-        <Footer thi="i'm" is= "the" a="footer" foot />
+        <Footer thi="i'm" is= "the" a="footer" foot/>
       </body>
     </html>
   );
