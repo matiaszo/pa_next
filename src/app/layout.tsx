@@ -35,7 +35,7 @@ export default function RootLayout({
       >
         {/* <Home/> */}
         <Header/>
-        <main>{children}</main>
+        <main className="flex items-center justify-center gap-5 mt-[20vh]">{children}</main>
         <Footer thi="i'm" is= "the" a="footer" foot/>
       </body>
     </html>

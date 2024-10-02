@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Cards from "../cards/page";
+import Cards from "../../components/card";
 import cityImg from "@/city.jpg";
 import cityImg2 from "@/city2.jpg";
 import cityImg3 from "@/city3.jpg";
@@ -49,9 +49,7 @@ export default function Home(){
         </div> */}
 
         {data.map((item, index) => (
-            <div key={index}>
-                <Cards image={item.img} read={item.read} views={item.views} comments={item.comments} />
-            </div>
+                <Cards key={index} image={item.img} read={item.read} views={item.views} comments={item.comments} />
         ))}
         </>
     )
