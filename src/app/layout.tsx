@@ -34,7 +34,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} antialiased min-h-screen flex flex-col justify-between`}
       >
         {/* <Header/> */}
-        <main className="flex flex-wrap min-h-[100vh] justify-center items-center gap-8 bg-gradiente p-10">{children}</main>
+        <main className="flex flex-wrap min-h-[100vh] justify-center items-center gap-12 bg-gradiente p-10">{children}</main>
         {/* <Footer thi="i'm" is= "the" a="footer" foot/> */}
       </body>
     </html>

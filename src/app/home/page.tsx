@@ -6,33 +6,42 @@ import cityImg3 from "@/city3.jpg";
 import { StaticImageData } from "next/image";
 
 
-const data: {img: StaticImageData; read: string; views: string; comments: string; color:string; divideColor: string; fontColor: string} [] = [
+const data: {img: StaticImageData; postNumber:string, week:string,  read: string; views: string; comments: string; color:string; divideColor: string; fontColor: string; bgColor:string} [] = [
     {
     img: cityImg,
+    postNumber: "Post One",
+    week: "4 days ago",
     read: "7",
     views: "7000",
     comments: "500",
     color: "bg-pink-500",
     divideColor: "divide-pink-700",
-    fontColor: "text-pink-500"
+    fontColor: "text-pink-500",
+    bgColor: "bg-pink-700"
     },
     {
     img: cityImg2,
+    postNumber: "Post Two",
+    week: "1 week ago",
     read: "8",
     views: "6000",
     comments: "500",
     color: "bg-orange-500",
     divideColor: "divide-orange-700",
-    fontColor: "text-orange-500"
+    fontColor: "text-orange-500",
+    bgColor: "bg-orange-700"
     },
     {
     img: cityImg3,
+    postNumber: "Post Three",
+    week: "3 week ago",
     read: "9",
     views: "4000",
     comments: "500",
     color: "bg-green-500",
     divideColor: "divide-green-700",
-    fontColor: "text-green-500"
+    fontColor: "text-green-500",
+    bgColor: "bg-green-700"
     }
 ]
 
@@ -59,7 +68,7 @@ export default function Home(){
         </div> */}
 
         {data.map((item, index) => (
-                <Cards key={index} image={item.img} read={item.read} views={item.views} comments={item.comments} color={item.color} divideColor={item.divideColor} fontColor={item.fontColor}/>
+                <Cards key={index} image={item.img} postNumber={item.postNumber} week={item.week} read={item.read} views={item.views} comments={item.comments} color={item.color} divideColor={item.divideColor} fontColor={item.fontColor} bgColor={item.bgColor}/>
         ))}
         </>
     )
