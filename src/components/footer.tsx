@@ -11,7 +11,7 @@ interface IFooter{
 export const Footer: React.FC<IFooter> = ({thi, is, a, foot}) =>{
 
     const style = {
-        f: "font-robFont flex text-medium justify-center items-center bg-cyan absolute bottom-0 w-screen h-[5vh]"
+        f: "font-robFont flex text-medium justify-center items-center bg-cyan relative bottom-0 w-screen h-[5vh]"
     }
 
     return(

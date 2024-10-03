@@ -23,6 +23,9 @@ const config: Config = {
       },
       screens:{
         "2lg": "1920px"
+      },
+      backgroundImage: {
+        gradiente: "conic-gradient(at 70% -10%, white, black,#202020,#303030, black, white)"
       }
     },
   },

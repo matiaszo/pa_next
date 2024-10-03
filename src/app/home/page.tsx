@@ -3,30 +3,40 @@ import Cards from "../../components/card";
 import cityImg from "@/city.jpg";
 import cityImg2 from "@/city2.jpg";
 import cityImg3 from "@/city3.jpg";
+import { StaticImageData } from "next/image";
 
 
+const data: {img: StaticImageData; read: string; views: string; comments: string; color:string; divideColor: string; fontColor: string} [] = [
+    {
+    img: cityImg,
+    read: "7",
+    views: "7000",
+    comments: "500",
+    color: "bg-pink-500",
+    divideColor: "divide-pink-700",
+    fontColor: "text-pink-500"
+    },
+    {
+    img: cityImg2,
+    read: "8",
+    views: "6000",
+    comments: "500",
+    color: "bg-orange-500",
+    divideColor: "divide-orange-700",
+    fontColor: "text-orange-500"
+    },
+    {
+    img: cityImg3,
+    read: "9",
+    views: "4000",
+    comments: "500",
+    color: "bg-green-500",
+    divideColor: "divide-green-700",
+    fontColor: "text-green-500"
+    }
+]
 
 export default function Home(){
-    const data: {img: any; read: string; views: string; comments: string} [] = [
-        {
-        img: cityImg,
-        read: "7",
-        views: "7000",
-        comments: "500"
-        },
-        {
-        img: cityImg2,
-        read: "8",
-        views: "6000",
-        comments: "500"
-        },
-        {
-        img: cityImg3,
-        read: "9",
-        views: "4000",
-        comments: "500"
-        }
-    ]
 
     const style = {
         p: "text-pink-500 font-robFont text-large 2lg justify-center align-center",
@@ -49,7 +59,7 @@ export default function Home(){
         </div> */}
 
         {data.map((item, index) => (
-                <Cards key={index} image={item.img} read={item.read} views={item.views} comments={item.comments} />
+                <Cards key={index} image={item.img} read={item.read} views={item.views} comments={item.comments} color={item.color} divideColor={item.divideColor} fontColor={item.fontColor}/>
         ))}
         </>
     )

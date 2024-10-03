@@ -1,54 +1,50 @@
-import cityImg from "@/city.jpg";
-import cityImg2 from "@/city2.jpg";
-import cityImg3 from "@/city3.jpg";
 
 
 
-const Cards = ({image, read, views, comments}: any) =>{
+
+const Cards = ({image, read, views, comments, color, fontColor, divideColor}: any) =>{
     return(
         <>
-            {/* <div className="flex h-[90vh] justify-center items-center"> */}
-                <div className="flex flex-col bg-cyan rounded-2xl max-w-[16vw]">
-                    <img src={image.src} className="w-[50vw] h-[20vh] rounded-2xl" />
+                <div className="flex flex-col ease-in-out duration-500 hover:scale-110 bg-slate-100 rounded-2xl overflow-hidden min-w-72 max-w-80 ">
+                    <img src={image.src} className="w-full h-[200px] object-cover rounded-t-2xl" />
 
                     <div className="flex flex-col justify-center items-center">
-                        <h1 className="text-orange-400"> 1 week ago </h1>
+                        <h1 className={`${fontColor} font-bold mt-3`}> 1 week ago </h1>
                         <h2 className="text-slate-950 text-3xl font-bold"> Post two </h2>
                     </div>
 
-                    <div className="flex justify-center items-center mt-8 p-2 text-center">
+                    <div className="flex justify-center items-center mt-2 mb-2 p-2 text-center">
                         <span>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, ipsam amet dicta nesciunt reiciendis magni? Veritatis, repellat. Ratione, tenetur? Minus eaque dicta consequatur vitae a nostrum dolorum corrupti dolores perspiciatis?
                         </span>
                     </div>
 
-                    <div className="flex  items-center justify-around p-2">
-                        <div className="flex flex-col bg-orange-400 p-2 w-20 items-center justify-center rounded-md">
-                            <span>
-                                7
-                            </span>
-                            <span>
+                    <div className={`flex text-slate-100 font-medium divide-x items-center justify-center w-full ${divideColor}`}>
+                    <div className={`flex flex-col p-2 w-1/3 items-center justify-center ${color}`}>
+                            <span className="text-xl">
                                 {read}
                             </span>
-                        </div>
-                        <div className="flex flex-col bg-orange-400 p-2 w-20 items-center justify-center rounded-md">
-                            <span>
-                                7
+                            <span className="font-thin">
+                                Read
                             </span>
-                            <span>
+                        </div>
+                        <div className={`flex flex-col p-2 w-1/3 items-center justify-center ${color}`}>
+                            <span className="text-xl">
                                 {views}
                             </span>
-                        </div>
-                        <div className="flex flex-col bg-orange-400 p-2 w-20 items-center justify-center rounded-md">
-                            <span>
-                                7
+                            <span className="font-thin">
+                                Views
                             </span>
-                            <span>
+                        </div>
+                        <div className={`flex flex-col p-2 w-1/3 items-center justify-center ${color}`}>
+                            <span className="text-xl">
                                 {comments}
+                            </span>
+                            <span className="font-thin">
+                                Comments
                             </span>
                         </div>
                     </div>
-                {/* </div> */}
             </div>
         </>
     )   

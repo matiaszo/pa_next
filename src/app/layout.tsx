@@ -31,12 +31,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} antialiased min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} antialiased min-h-screen flex flex-col justify-between`}
       >
-        {/* <Home/> */}
-        <Header/>
-        <main className="flex items-center justify-center gap-5 mt-[20vh]">{children}</main>
-        <Footer thi="i'm" is= "the" a="footer" foot/>
+        {/* <Header/> */}
+        <main className="flex flex-wrap min-h-[100vh] justify-center items-center gap-8 bg-gradiente p-10">{children}</main>
+        {/* <Footer thi="i'm" is= "the" a="footer" foot/> */}
       </body>
     </html>
   );
